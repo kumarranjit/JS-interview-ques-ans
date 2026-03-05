@@ -40,7 +40,7 @@ var a = 1;
 
 // console.log(b); // ReferenceError (TDZ)
 let b = 2;
-
+---
 ## Closures
 
 ### What is a closure?
@@ -59,3 +59,4 @@ function makeCounter() {
 const counter = makeCounter();
 counter(); // 1
 counter(); // 2
+----
