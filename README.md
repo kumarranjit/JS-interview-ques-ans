@@ -2,11 +2,6 @@
 
 A curated set of JavaScript interview questions with concise answers, deeper explanations, and runnable code examples.
 
-## How to use this repo
-- Skim the **Short answer** first, then read the **Deep dive**.
-- Try to predict outputs before running examples.
-- Use your editor search (Ctrl/Cmd+F) to find a topic fast.
-
 ## Table of Contents
 - [Basics](#basics)
   - [What is JavaScript?](#what-is-javascript)
