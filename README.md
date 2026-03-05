@@ -59,4 +59,21 @@ function makeCounter() {
 const counter = makeCounter();
 counter(); // 1
 counter(); // 2
-----
+```
+## Promises
+
+### What is a Promise??
+**Short answer:** A Promise represents a future value: pending → fulfilled or rejected.
+
+**Deep dive:** 
+
+### Difference between `Promise.all` vs `Promise.allSettled`, vs ``
+**Short answer:**
+- `Promise.all`: fails fast if any promise rejects
+- `Promise.allSettled`: waits for all results (fulfilled/rejected)
+- `const`: binding cannot be reassigned (object contents can still mutate)
+
+**Example:**
+```js
+
+```
