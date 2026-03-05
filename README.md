@@ -40,3 +40,22 @@ var a = 1;
 
 // console.log(b); // ReferenceError (TDZ)
 let b = 2;
+
+## Closures
+
+### What is a closure?
+**Short answer:** A closure is when a function “remembers” variables from its outer scope even after that outer function has returned..
+
+**Example:**
+```js
+function makeCounter() {
+  let count = 0;
+  return function () {
+    count += 1;
+    return count;
+  };
+}
+
+const counter = makeCounter();
+counter(); // 1
+counter(); // 2
