@@ -66,16 +66,19 @@ A Promise can be in three states:
   Rejected -> operation failed
 Once fulfilled or rejected, the state cannot change.
 
-**Why Do We Need Promises in JavaScript?**  => Promises handle asynchronous operations JavaScript runs on a single thread, 
+**Why Do We Need Promises in JavaScript?**
+Promises handle asynchronous operations JavaScript runs on a single thread, 
 so long operations (API calls, timers, file access) must be handled asynchronously.
 
 **How Promises Help**
+
   1️⃣ Avoid Callback Hell
   2️⃣ Better Error Handling
   3️⃣ Easier Async Flow Control
   4️⃣ Improves Readability & Maintainability
   
 **Deep dive:** 
+
 Promises represents the completion of an asynchronous operation with its result. 
 Promises handle single event, It can be success or failure but eventually completed.
 Unless the current excution of the event loop is completed(success or failure) callback will never be called before it.
@@ -83,7 +86,8 @@ Callback added with 'then()' as after success or failure of the asynchronous ope
 Callback function take two arguments resolve, reject.
 multiple callback may be added each callback is executed one after another in the order which they were inherited.
 
-**Final Summary**
+**Final Summary:**
+
 Promises handle async operations
 They replace messy callbacks
 Foundation for async/await
