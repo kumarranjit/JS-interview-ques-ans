@@ -58,9 +58,49 @@ counter(); // 2
 ## Promises
 
 ### What is a Promise??
-**Short answer:** A Promise represents a future value: pending → fulfilled or rejected.
+**Short answer:** A Promise is a JavaScript object that represents the eventual result (success or failure) of an asynchronous operation.
 
+A Promise can be in three states:
+  Pending -> operation is still running
+  Fulfilled -> operation completed successfully
+  Rejected -> operation failed
+Once fulfilled or rejected, the state cannot change.
+
+**Why Do We Need Promises in JavaScript?**  => Promises handle asynchronous operations JavaScript runs on a single thread, 
+so long operations (API calls, timers, file access) must be handled asynchronously.
+
+**How Promises Help**
+  1️⃣ Avoid Callback Hell
+  2️⃣ Better Error Handling
+  3️⃣ Easier Async Flow Control
+  4️⃣ Improves Readability & Maintainability
+  
 **Deep dive:** 
+Promises represents the completion of an asynchronous operation with its result. 
+Promises handle single event, It can be success or failure but eventually completed.
+Unless the current excution of the event loop is completed(success or failure) callback will never be called before it.
+Callback added with 'then()' as after success or failure of the asynchronous operation, 
+Callback function take two arguments resolve, reject.
+multiple callback may be added each callback is executed one after another in the order which they were inherited.
+
+**Final Summary**
+Promises handle async operations
+They replace messy callbacks
+Foundation for async/await
+Promises handle single event, It can be success or failure but eventually completed.
+
+**Example:**
+```js
+const promiseFun = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve('Data loaded');
+  }, 1000);
+});
+
+promiseFun
+  .then(result => console.log(result))
+  .catch(error => console.error(error));
+```
 
 ### Difference between `Promise.all` vs `Promise.allSettled`, vs ``
 **Short answer:**
