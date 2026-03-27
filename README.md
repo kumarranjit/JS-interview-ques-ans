@@ -61,9 +61,13 @@ counter(); // 2
 **Short answer:** A Promise is a JavaScript object that represents the eventual result (success or failure) of an asynchronous operation.
 
 A Promise can be in three states:
+
   Pending -> operation is still running
+  
   Fulfilled -> operation completed successfully
+  
   Rejected -> operation failed
+  
 Once fulfilled or rejected, the state cannot change.
 
 **Why Do We Need Promises in JavaScript?**
