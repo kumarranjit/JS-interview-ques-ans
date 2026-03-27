@@ -44,7 +44,7 @@ A closure is a feature in JavaScript where an inner function has access to the o
 The closure has three scope chains: it has access to its own scope, variables defined between its curly brackets. 
 it has access to the outer function's variables.
 
-**How closure Help** Closures has important role in callbacks and asynchronous programming.
+**How closure Help :** Closures has important role in callbacks and asynchronous programming.
 
 **Short answer:** 
 A closure is when a function “remembers” variables from its outer scope even after that outer function has returned..
