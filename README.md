@@ -39,9 +39,17 @@ let b = 2;
 ## Closures
 
 ### What is a closure?
-**Short answer:** A closure is when a function “remembers” variables from its outer scope even after that outer function has returned..
+A closure is a feature in JavaScript where an inner function has access to the outer (enclosing) function's variables, a scope chain. 
 
-**Example:**
+The closure has three scope chains: it has access to its own scope, variables defined between its curly brackets. 
+it has access to the outer function's variables.
+
+Closures has important role in callbacks and asynchronous programming.
+
+**Short answer:** 
+A closure is when a function “remembers” variables from its outer scope even after that outer function has returned..
+
+**Example:1**
 ```js
 function makeCounter() {
   let count = 0;
@@ -55,6 +63,29 @@ const counter = makeCounter();
 counter(); // 1
 counter(); // 2
 ```
+**Example:2**
+```js
+function create() {
+   var counter = 0;
+   return {
+      increment: function() {
+         counter++;
+         console.log("increment", counter);
+      },
+      decrement: function() {
+        counter--;
+        console.log("decrement", counter);
+      },
+      print: function() {
+         console.log(counter);
+      }
+   }
+}
+var c = create();
+c.increment();
+c.print();
+```
+
 ## Promises
 
 ### What is a Promise??
