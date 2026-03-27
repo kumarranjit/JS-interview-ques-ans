@@ -63,9 +63,7 @@ counter(); // 2
 A Promise can be in three states:
 
   Pending -> operation is still running
-  
   Fulfilled -> operation completed successfully
-  
   Rejected -> operation failed
   
 Once fulfilled or rejected, the state cannot change.
